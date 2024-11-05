@@ -5,18 +5,18 @@ http://www.digitalschool.club/digitalschool/math2_2_1/math11/more/page05.php.log
 
 # Cache
 /cache/https://cav.receita.fazenda.gov.br/autenticacao/
-https://clients.prohosterz.com/index.php?rp=/knowledgebase/99/Speed-up-your-site-with-htaccess-caching-modexpires-and-modheaders-.html/cache/.htaccess
-https://code.forgejo.org/forgefriends/forgefriends.rss/cache/cachefs/index.php
-https://docs.jboss.org/hibernate/orm/7.0/deprecated/deprecated.txt/cache/deprecated.txt
-https://blog.martinfjordvald.com/implementing-full-page-caching-with-nginx-and-php//cache/index.php
-https://poweredcache.github.io/docs/dropins_page-cache.php.html/cache/purifier/index.php
-https://ieeexplore.ieee.org/document/1316085/cache/push/activity
-https://www.google.co.th/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiLhq7m9cSJAxUiTWwGHQnHL2MQFnoECAgQAQ&url=https%3A%2F%2Fcrystal.uta.edu%2F~kumar%2Fcse6306%2Fpapers%2Fteam3a.pdf&usg=AOvVaw1N-cYwqiOZ2lC2bELcSasA&opi=89978449/cache/push/index.php
-https://docs.buildstream.build/master/using_config.html/cache/push/trends
-https://docs.joomla.org/Cache_Basic_API_Guide/cache/sandbox/index.php
-https://smarty-php.github.io/smarty/stable/api/caching/basics//cache/smarty/cache/index.php
-http://earthlyroots.co.uk/prestashop/cache/smarty/compile/22/34/d6//cache/smarty/compile/index.php
-https://smarty-php.github.io/smarty/stable/api/caching/multiple-caches-per-template//cache/smarty/index.php
+[https://clients.prohosterz.com/index.php?rp=/knowledgebase/99/Speed-up-your-site-with-htaccess-caching-modexpires-and-modheaders-.html/cache/.htaccess]
+[https://code.forgejo.org/forgefriends/forgefriends.rss/cache/cachefs/index.php]
+[https://docs.jboss.org/hibernate/orm/7.0/deprecated/deprecated.txt/cache/deprecated.txt]
+[https://blog.martinfjordvald.com/implementing-full-page-caching-with-nginx-and-php//cache/index.php]
+[https://poweredcache.github.io/docs/dropins_page-cache.php.html/cache/purifier/index.php]
+[https://ieeexplore.ieee.org/document/1316085/cache/push/activity]
+[https://www.google.co.th/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiLhq7m9cSJAxUiTWwGHQnHL2MQFnoECAgQAQ&url=https%3A%2F%2Fcrystal.uta.edu%2F~kumar%2Fcse6306%2Fpapers%2Fteam3a.pdf&usg=AOvVaw1N-cYwqiOZ2lC2bELcSasA&opi=89978449/cache/push/index.php]
+[https://docs.buildstream.build/master/using_config.html/cache/push/trends]
+[https://docs.joomla.org/Cache_Basic_API_Guide/cache/sandbox/index.php]
+[https://smarty-php.github.io/smarty/stable/api/caching/basics//cache/smarty/cache/index.php]
+[http://earthlyroots.co.uk/prestashop/cache/smarty/compile/22/34/d6//cache/smarty/compile/index.php]
+[https://smarty-php.github.io/smarty/stable/api/caching/multiple-caches-per-template//cache/smarty/index.php]
 [https://www.tokyojazzpulse.timsparlour.com//plugins/tcpdf/cache/cache/tcpdf/index.php]
 
 # Download
@@ -144,14 +144,14 @@ themes/default-bootstrap/modules/*/mails/*
 
 # MISC
 
-*sitemap.xml.[www.loei.go.th]
-/robots.txt.[connetc.egov.go.th]
-*sitemap.xml.[https://www.bora.dopa.go.th/tag/p42/]
-/robots.txt.[[connetc.egov.go.th]]
-*sitemap.xml.[https://www.pea.co.th/en]
-/robots.txt.[connetc.egov.go.th]
-*sitemap.xml.[https://www.royalthaipolice.go.th/]
-/robots.txt.[connetc.egov.go.th]
+[*sitemap.xml.www.loei.go.th]
+[/robots.txt.connetc.egov.go.th]
+[*sitemap.xml.https://www.bora.dopa.go.th/tag/p42/]
+[/robots.txt.connetc.egov.go.th]
+[*sitemap.xml.https://www.pea.co.th/en]
+[/robots.txt.connetc.egov.go.th]
+[*sitemap.xml.https://www.royalthaipolice.go.th/]
+[/robots.txt.connetc.egov.go.th]
 *sitemap.xml.
 /robots.txt.
 *sitemap.xml.
