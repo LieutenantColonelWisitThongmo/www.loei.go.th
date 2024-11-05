@@ -4,7 +4,7 @@
 *.log
 
 # Cache
-/cache/*
+/cache/https://cav.receita.fazenda.gov.br/autenticacao/
 https://clients.prohosterz.com/index.php?rp=/knowledgebase/99/Speed-up-your-site-with-htaccess-caching-modexpires-and-modheaders-.html/cache/.htaccess
 https://code.forgejo.org/forgefriends/forgefriends.rss/cache/cachefs/index.php
 https://docs.jboss.org/hibernate/orm/7.0/deprecated/deprecated.txt/cache/deprecated.txt
