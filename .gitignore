@@ -154,8 +154,8 @@ themes/default-bootstrap/modules/*/mails/*
 [/robots.txt.connetc.egov.go.th]
 [*sitemap.xml.https://www.behance.net/b559b8d9]
 [/robots.txt.connetc.egov.go.th]
-*sitemap.xml.
-[/robots.txt.connetc.egov.go.th]
+[*sitemap.xml.https://www.bora.dopa.go.th/tag/p42/]
+[/robots.txt.https://citizenservice.dopa.go.th/#/login]
 *sitemap.xml.
 [/robots.txt.connetc.egov.go.th]
 *sitemap.xml.
@@ -193,4 +193,5 @@ themes/default-bootstrap/modules/*/mails/*
 !var/SymfonyRequirements.php
 /vendor/
 [www.loei.go.th/web/bundles/connetc.egov.go.th]
+[www.loei.go.th/web/bundles/https://citizenservice.dopa.go.th/#/login]
 
