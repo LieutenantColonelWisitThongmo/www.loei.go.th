@@ -605,3 +605,203 @@ H���$�$�J�͚�J_��C7�A�=1̬m
 _��\'�Sf��>r]�&HD�GǛu3�
 ��(�uNKBa2����w?�e��p	�}3�\'ƪ YQC�\\5�L����psg۔�B�~HN�o\'����ݫھ8�ه\\�Gs�\'���j��#�����~�c�l?/]c?��X?�a#J=�E!<�4; 48�ɝV��!DKnM���+>1��ѵ@��Q�+$�����X�f��T�)�ܣ�]I��tp�*Ȗ�o,�����r>l��5�H6u��\\�nD�x����ϐ�{�Jr�;zo��J��w�R�%�!$_����;��hާc�"d��y����6�e������4�/0=0!0	+' . "\0" . 'wiR��wQ-�/	�KI��z���Z,�qL�z�H�+�' . "\0" . '";s:18:"privateKeyPassword";s:10:"notasecret";s:13:"assertionType";s:42:"http://oauth.net/grant_type/jwt/1.0/bearer";s:3:"sub";b:0;s:3:"prn";b:0;s:42:"' . "\0" . 'Google_Auth_AssertionCredentials' . "\0" . 'useCache";b:1;}s:25:"' . "\0" . 'Google_Auth_OAuth2' . "\0" . 'state";N;s:25:"' . "\0" . 'Google_Auth_OAuth2' . "\0" . 'token";a:0:{}s:26:"' . "\0" . 'Google_Auth_OAuth2' . "\0" . 'client";r:35;}s:17:"' . "\0" . 'Google_Client' . "\0" . 'io";N;s:20:"' . "\0" . 'Google_Client' . "\0" . 'cache";N;s:21:"' . "\0" . 'Google_Client' . "\0" . 'config";O:13:"Google_Config":1:{s:16:"' . "\0" . '*' . "\0" . 'configuration";a:7:{s:16:"application_name";s:11:"Project Otp";s:10:"auth_class";s:18:"Google_Auth_OAuth2";s:8:"io_class";s:14:"Google_IO_Curl";s:11:"cache_class";s:17:"Google_Cache_File";s:12:"logger_class";s:18:"Google_Logger_Null";s:9:"base_path";s:26:"https://www.googleapis.com";s:7:"classes";a:10:{s:18:"Google_IO_Abstract";a:1:{s:23:"request_timeout_seconds";i:100;}s:14:"Google_IO_Curl";a:2:{s:24:"disable_proxy_workaround";b:0;s:7:"options";N;}s:22:"Google_Logger_Abstract";a:4:{s:5:"level";s:5:"debug";s:10:"log_format";s:42:"[%datetime%] %level%: %message% %context%
 ";s:11:"date_format";s:13:"d/M/Y:H:i:s O";s:14:"allow_newlines";b:1;}s:18:"Google_Logger_File";a:3:{s:4:"file";s:12:"php://stdout";s:4:"mode";i:416;s:4:"lock";b:0;}s:19:"Google_Http_Request";a:2:{s:12:"disable_gzip";b:0;s:23:"enable_gzip_for_uploads";b:0;}s:18:"Google_Auth_OAuth2";a:13:{s:9:"client_id";s:72:"984759903857-jajrhcu8pvturakt4t7i9t4d6ve3homh.apps.googleusercontent.com";s:13:"client_secret";s:0:"";s:12:"redirect_uri";s:0:"";s:13:"developer_key";s:0:"";s:2:"hd";s:0:"";s:6:"prompt";s:0:"";s:12:"openid.realm";s:0:"";s:22:"include_granted_scopes";s:0:"";s:10:"login_hint";s:0:"";s:23:"request_visible_actions";s:0:"";s:11:"access_type";s:14:"offline_access";s:15:"approval_prompt";s:4:"auto";s:26:"federated_signon_certs_url";s:42:"https://www.googleapis.com/oauth2/v1/certs";}s:18:"Google_Task_Runner";a:5:{s:13:"initial_delay";i:1;s:9:"max_delay";i:60;s:6:"factor";i:2;s:6:"jitter";d:0.5;s:7:"retries";i:0;}s:24:"Google_Service_Exception";a:1:{s:9:"retry_map";a:4:{i:500;i:-1;i:503;i:-1;s:17:"rateLimitExceeded";i:-1;s:21:"userRateLimitExceeded";i:-1;}}s:19:"Google_IO_Exception";a:1:{s:9:"retry_map";a:5:{i:6;i:-1;i:7;i:-1;i:28;i:-1;i:35;i:-1;i:52;i:-1;}}s:17:"Google_Cache_File";a:1:{s:9:"directory";s:29:"C:\\Windows\\TEMP/Google_Client";}}}}s:21:"' . "\0" . 'Google_Client' . "\0" . 'logger";N;s:29:"' . "\0" . 'Google_Client' . "\0" . 'deferExecution";b:0;s:18:"' . "\0" . '*' . "\0" . 'requestedScopes";a:0:{}s:11:"' . "\0" . '*' . "\0" . 'services";a:0:{}s:28:"' . "\0" . 'Google_Client' . "\0" . 'authenticated";b:0;}s:36:"' . "\0" . 'Google_Service_Resource' . "\0" . 'serviceName";s:9:"analytics";s:36:"' . "\0" . 'Google_Service_Resource' . "\0" . 'servicePath";s:13:"analytics/v3/";s:37:"' . "\0" . 'Google_Service_Resource' . "\0" . 'resourceName";s:2:"ga";s:32:"' . "\0" . 'Google_Service_Resource' . "\0" . 'methods";a:1:{s:3:"get";a:3:{s:4:"path";s:7:"data/ga";s:10:"httpMethod";s:3:"GET";s:10:"parameters";a:13:{s:3:"ids";a:3:{s:8:"location";s:5:"query";s:4:"type";s:6:"string";s:8:"required";b:1;}s:10:"start-date";a:3:{s:8:"location";s:5:"query";s:4:"type";s:6:"string";s:8:"required";b:1;}s:8:"end-date";a:3:{s:8:"location";s:5:"query";s:4:"type";s:6:"string";s:8:"required";b:1;}s:7:"metrics";a:3:{s:8:"location";s:5:"query";s:4:"type";s:6:"string";s:8:"required";b:1;}s:10:"dimensions";a:2:{s:8:"location";s:5:"query";s:4:"type";s:6:"string";}s:7:"filters";a:2:{s:8:"location";s:5:"query";s:4:"type";s:6:"string";}s:18:"include-empty-rows";a:2:{s:8:"location";s:5:"query";s:4:"type";s:7:"boolean";}s:11:"max-results";a:2:{s:8:"location";s:5:"query";s:4:"type";s:7:"integer";}s:6:"output";a:2:{s:8:"location";s:5:"query";s:4:"type";s:6:"string";}s:13:"samplingLevel";a:2:{s:8:"location";s:5:"query";s:4:"type";s:6:"string";}s:7:"segment";a:2:{s:8:"location";s:5:"query";s:4:"type";s:6:"string";}s:4:"sort";a:2:{s:8:"location";s:5:"query";s:4:"type";s:6:"string";}s:11:"start-index";a:2:{s:8:"location";s:5:"query";s:4:"type";s:7:"integer";}}}}}s:8:"data_mcf";O:41:"Google_Service_Analytics_DataMcf_Resource":7:{s:40:"' . "\0" . 'Google_Service_Resource' . "\0" . 'stackParameters";a:10:{s:3:"alt";a:2:{s:4:"type";s:6:"string";s:8:"location";s:5:"query";}s:6:"fields";a:2:{s:4:"type";s:6:"string";s:8:"location";s:5:"query";}s:5:"trace";a:2:{s:4:"type";s:6:"string";s:8:"location";s:5:"query";}s:6:"userIp";a:2:{s:4:"type";s:6:"string";s:8:"location";s:5:"query";}s:9:"quotaUser";a:2:{s:4:"type";s:6:"string";s:8:"location";s:5:"query";}s:4:"data";a:2:{s:4:"type";s:6:"string";s:8:"location";s:4:"body";}s:8:"mimeType";a:2:{s:4:"type";s:6:"string";s:8:"location";s:6:"header";}s:10:"uploadType";a:2:{s:4:"type";s:6:"string";s:8:"location";s:5:"query";}s:11:"mediaUpload";a:2:{s:4:"type";s:7:"complex";s:8:"location";s:5:"query";}s:11:"prettyPrint";a:2:{s:4:"type";s:6:"string";s:8:"location";s:5:"query";}}s:32:"' . "\0" . 'Google_Service_Resource' . "\0" . 'rootUrl";s:27:"https://www.googleapis.com/";s:31:"' . "\0" . 'Google_Service_Resource' . "\0" . 'client";r:35;s:36:"' . "\0" . 'Google_Service_Resource' . "\0" . 'serviceName";s:9:"analytics";s:36:"' . "\0" . 'Google_Service_Resource' . "\0" . 'servicePath";s:13:"analytics/v3/";s:37:"' . "\0" . 'Google_Serv
+<script>sessionStorage.removeItem('ads');</script><?xml เวอร์ชัน="1.0" การเข้ารหัส="UTF-8"?><rss เวอร์ชัน="2.0"
+	xmlns:เนื้อหา="http://purl.org/rss/1.0/โมดูล/เนื้อหา/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:อะตอม="http://www.w3.org/2005/อะตอม"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:เครื่องหมายทับ="http://purl.org/rss/1.0/โมดูล/เครื่องหมายทับ/"
+	-
+
+<ช่องทาง>
+	<title>อาชญากรรม | สำนักงานตำรวจแห่งชาติ</title>
+	<atom:ลิงก์ href="https://www.crimespolice.com/portal/feed/" rel="self" ประเภท="application/rss+xml" />
+	<ลิงค์>https://www.crimespolice.com/portal</ลิงค์>
+	<description>ระบบ Web Portal ระบบอาชญากรรม</description>
+	<lastBuildDate>ศุกร์, 01 พ.ย. 2024 05:56:02 +0000</lastBuildDate>
+	ภาษาen-US
+	<sy:updatePeriod>รายชั่วโมง</sy:updatePeriod>
+	ความถี่อัปเดต 1
+	เครื่องกำเนิดไฟฟ้าhttps://wordpress.org/?v=4.9.26
+	<รายการ>
+		<title>การควบคุมดูแลด้านมวลชนสัมพันธ์</title>
+		ลิงค์ที่เกี่ยวข้อง: https://www.crimespolice.com/portal/%e0%b9%81%e0%b8%99%e0%b8%a7%e0%b8%97%e0%b8%b2%e0%b8%87%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%9b%e0%b8%8f%e0%b8%b4%e0%b8%9a%e0%b8%b1%e0%b8%95%e0%b8%b4%e0%b8%87%e0%b8%b2%e0%b8%99%e0%b8%94%e0%b9%89%e0%b8%b2/
+		<ความคิดเห็น>https://www.crimespolice.com/portal/%e0%b9%81%e0%b8%99%e0%b8%a7%e0%b8%97%e0%b8%b2%e0%b8% 87%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%9b%e0%b8%8f%e0%b8%b4%e0%b8%9a%e0%b8%b1% e0%b8%95%e0%b8%b4%e0%b8%87%e0%b8%b2%e0%b8%99%e0%b8%94%e0%b9%89%e0%b8%b2/#ตอบกลับ </ความคิดเห็น>
+		<pubDate>ศุกร์ที่ 04 ต.ค. 2024 07:03:35 +0000</pubDate>
+		<dc:ผู้สร้าง> <![CDATA[28C208]]></dc:ผู้สร้าง>
+				<category><![CDATA[ข่าวประกาศ]]></category>
+
+		<guid isPermaLink="false">https://www.crimespolice.com/portal/?p=11915</guid>
+		<คำอธิบาย><![CDATA[]]></คำอธิบาย>
+				<เนื้อหา:เข้ารหัส><![CDATA[<div class="et_pb_section et_pb_section_0 et_section_regular">
+				
+				
+				
+					แถว 0
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_0 et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				ป้ายกำกับ: et_pb_text โมดูล et_pb_bg_layout_light et_pb_text_align_left et_pb_text_0
+				
+				
+				คลาส et_pb_text_inner
+					<h3 style="text-align: center;"> การรักษาความปลอดภัยของด้านมวลชนสัมพันธ์สำหรับข้าราชการต่อศาณานิกชนต่างๆ</h3>
+				</div>
+			</div> <!-- .et_pb_text --><div ระดับ="โมดูล et_pb_image et_pb_image_0 et_always_center_on_mobile">
+				
+				
+				<span class="et_pb_image_wrap"><img src="https://www.crimespolice.com/portal/wp-content/uploads/2024/10/มวลชนสัมพันธ์1_Page_01.jpg" alt="" /></span >
+			</div><div class="et_pb_module et_pb_image et_pb_image_1 et_always_center_on_mobile">
+				
+				
+				<a href="https://www.crimespolice.com/portal/wp-content/uploads/2024/10/รวดเร็วสัมพันธ์.pdf" target="_blank"><span class="et_pb_image_wrap"><img src="https://www.crimespolice.com/portal/wp-content/uploads/2023/04/icons8-downloading-updates-64.png" alt="" /></span></a>
+			</div><div class="et_pb_text โมดูล et_pb_bg_layout_light et_pb_text_align_left et_pb_text_1">
+				
+				
+				คลาส et_pb_text_inner
+					<h3 style="text-align: center;"><a href="https://www.crimespolice.com/portal/wp-content/uploads/2024/10/มวลชนสัมพันธ์.pdf" target="_blank" rel="noopener">ดาวน์โหลด</a></h3>
+<p>และ nbsp;</p>
+				</div>
+			</div> <!-- .et_pb_text -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row -->
+				
+			</div> <!-- .et_pb_section -->
+]]></เนื้อหา:เข้ารหัส>
+			ภาษาไทย: <wfw:commentRss>https://www.crimespolice.com/portal/%e0%b9%81%e0%b8%99%e0%b8%a7%e0%b8%97%e0%b8%b2%e0%b8%87%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%9b%e0%b8%8f%e0%b8%b4%e0%b8%9a%e0%b8%b1%e0%b8%95%e0%b8%b4%e0%b8%87%e0%b8%b2%e0%b8%99%e0%b8%94%e0%b9%89%e0%b8%b2/feed/</wfw:commentRss>
+		<slash:ความคิดเห็น>0</slash:ความคิดเห็น>
+		</รายการ>
+		<รายการ>
+		<title> คู่มือขอสิทธิ์ SSLVPN ผ่าน ThaiD</title>
+		<link>https://www.crimespolice.com/portal/%e0%b8%84%e0%b8%b9%e0%b9%88%e0%b8%a1%e0%b8%b7%e0%b8% โฆษณา%e0%b8%82%e0%b8%ad%e0%b8%aa%e0%b8%b4%e0%b8%97%e0%b8%98%e0%b8%b4%e0%b9%8c- sslvpn-%e0%b8%9c%e0%b9%88%e0%b8%b2%e0%b8%99-ไทย/</link>
+		<ความคิดเห็น>https://www.crimespolice.com/portal/%e0%b8%84%e0%b8%b9%e0%b9%88%e0%b8%a1%e0%b8%b7%e0%b8% โฆษณา%e0%b8%82%e0%b8%ad%e0%b8%aa%e0%b8%b4%e0%b8%97%e0%b8%98%e0%b8%b4%e0%b9%8c- sslvpn-%e0%b8%9c%e0%b9%88%e0%b8%b2%e0%b8%99-thaid/#respond</comments>
+		<pubDate>พุธที่ 31 กรกฎาคม 2024 06:23:46 +0000</pubDate>
+		<dc:ผู้สร้าง> <![CDATA[28C208]]></dc:ผู้สร้าง>
+				<category><![CDATA[ คู่มือของ SSL VPN ตร.]]></category>
+
+		<guid isPermaLink="false">https://www.crimespolice.com/portal/?p=11860</guid>
+		<description><![CDATA[ คู่มือขอสิทธิ์ SSLVPN ผ่าน ThaiD]]></description>
+				<content:encoded><![CDATA[<h1 style="text-align: left;"><a href="https://www.crimespolice.com/portal/wp-content/uploads/2024/07/ เครื่องมือขอสิทธิ์-SSLVPN- ผ่าน-ThaiD-1.pdf" target="_blank" rel="noopener">คู่มือขอสิทธิ์ SSLVPN ผ่าน ThaiD</a></h1>
+]]></เนื้อหา:เข้ารหัส>
+			<wfw:commentRss>https://www.crimespolice.com/portal/%e0%b8%84%e0%b8%b9%e0%b9%88%e0%b8%a1%e0%b8%b7%e0% b8%โฆษณา%e0%b8%82%e0%b8%โฆษณา% e0%b8%aa%e0%b8%b4%e0%b8%97%e0%b8%98%e0%b8%b4%e0%b9%8c-sslvpn-%e0%b8%9c%e0%b9%88 %e0%b8%b2%e0%b8%99-thaid/feed/</wfw:commentRss>
+		<slash:ความคิดเห็น>0</slash:ความคิดเห็น>
+		</รายการ>
+		<รายการ>
+		<title> ปฏิทินประจำวันอิเล็กทรอนิกส์</title>
+		<link>https://www.crimespolice.com/portal/%e0%b8%84%e0%b8%b9%e0%b9%88%e0%b8%a1%e0%b8%b7%e0%b8% โฆษณา%e0%b8%9b%e0%b8%a3%e0%b8%b0%e 0%b8%88%e0%b8%b3%e0%b8%a7%e0%b8%b1%e0%b8%99%e0%b8%โฆษณา%e0%b8%b4% e0%b9%80%e0%b8%a5%e0%b9%87%e0%b8%81%e0%b8%97%e0%b8%a3-3/</link>
+		<ความคิดเห็น>https://www.crimespolice.com/portal/%e0%b8%84%e0%b8%b9%e0%b9%88%e0%b8%a1%e0%b8%b7%e0%b8% โฆษณา%e0%b8%9b%e0%b8%a3%e0%b8%b0%e0%b8 %88%e0%b8%b3%e0%b8%a7%e0%b8%b1%e0%b8%99%e0%b8%โฆษณา%e0%b8%b4%e0%b9%80 %e0%b8%a5%e0%b9%87%e0%b8%81%e0%b8%97%e0%b8%a3-3/#ตอบกลับ</comments>
+		<pubDate>จ. 04 มี.ค. 2024 04:27:17 +0000</pubDate>
+		<dc:ผู้สร้าง><![CDATA[35CB08]]></dc:ผู้สร้าง>
+				<category><![CDATA[ระบบประจำวันอิเล็กทรอนิกส์ (PDAR)]]></category>
+
+		<guid isPermaLink="false">https://www.crimespolice.com/portal/?p=11800</guid>
+		<คำอธิบาย><![CDATA[– ตารางประจำวันอิเล็กทรอนิกส์ 03/04/2567]]></description>
+				<content:encoded><![CDATA[<h4><a href="https://www.crimespolice.com/portal/wp-content/uploads/2024/03/ หนังสือคู่มืออิเล็กทรอนิกส์.pdf">' 8211; ตารางประจำวันอิเล็กทรอนิกส์ 03/04/2567</a></h4>
+]]></เนื้อหา:เข้ารหัส>
+			<wfw:commentRss>https://www.crimespolice.com/portal/%e0%b8%84%e0%b8%b9%e0%b9%88%e0%b8%a1%e0%b8%b7%e0% b8%โฆษณา%e0%b8%9b%e0%b8%a3%e0%b8%b0%e0% b8%88%e0%b8%b3%e0%b8%a7%e0%b8%b1%e0%b8%99%e0%b8%โฆษณา%e0%b8%b4%e0%b9%80% e0%b8%a5%e0%b9%87%e0%b8%81%e0%b8%97%e0%b8%a3-3/ฟีด/</wfw:commentRss>
+		<slash:ความคิดเห็น>0</slash:ความคิดเห็น>
+		</รายการ>
+		<รายการ>
+		<title> แผน PM โครงการ อาชญากรรม 2567</title>
+		<ลิงก์>https://www.crimespolice.com/portal/pm-%e0%b9%82%e0%b8%84%e0%b8%a3%e0%b8%87%e0%b8%81%e0%b8%b2%e0%b8%a3-อาชญากรรม-2567/</ลิงก์>
+		<ความคิดเห็น>https://www.crimespolice.com/portal/pm-%e0%b9%82%e0%b8%84%e0%b8%a3%e0%b8%87%e0%b8%81%e0% b8%b2%e0%b8%a3-crimes-2567/#respond</comments>
+		<pubDate>อ. 23 ม.ค. 2024 01:54:39 +0000</pubDate>
+		<dc:ผู้สร้าง> <![CDATA[28C208]]></dc:ผู้สร้าง>
+				<category><![CDATA[ข่าวประกาศ]]></category>
+
+		<guid isPermaLink="false">https://www.crimespolice.com/portal/?p=11778</guid>
+		<description><![CDATA[PM โครงการ CRIMES กำหนดการสำรวจครุภัณฑ์โครงการพัฒนาระบบสารสนเทศสถานีตำรวจ CRIMES (MA CRIMES) ปีงบประมาณ 2567 ดาวน์โหลด]]></description>
+				<content:encoded><![CDATA[<h1 style="text-align: center;"><strong>PM ส่วนอาชญากรรม </strong></h1>
+<p><img class="wp-image-11780 aligncenter" src="https://www.crimespolice.com/portal/wp-content/uploads/2024/01/pm1-300x169.png" alt="" width="351" height="198" srcset="https://www.crimespolice.com/portal/wp-content/uploads/2024/01/pm1-300x169.png 300w, https://www.crimespolice.com/portal/wp-content/uploads/2024/01/pm1.png 710w" sizes="(max-width: 351px) 100vw, 351px" /></p>
+<h3 style="text-align: center;"> กำหนดสามารถตรวจสอบครุภัณฑ์โครงการพัฒนาระบบสารสนเทศสถานีตำรวจ อาชญากรรม</h3>
+<h3 style="text-align: center;">(MA CRIMES) ปีงบประมาณ 2567</h3>
+<p><a href="https://drive.google.com/drive/folders/1fAbq1YlwDWrgfLiTYeg2PTUAsvWuH2O_?usp=drive_link" target="_blank" rel="noopener"><img class="size-full wp-image-10956 aligncenter" src="https://www.crimespolice.com/portal/wp-content/uploads/2023/04/icons8-downloading-updates-64.png" alt="" width="64" height="64" /></a></p>
+<p style="text-align: center;"><a href="https://drive.google.com/drive/folders/1fAbq1YlwDWrgfLiTYeg2PTUAsvWuH2O_?usp=drive_link" target="_blank" rel="noopener"> ดาวน์โหลด </a></p>
+]]></เนื้อหา:เข้ารหัส>
+			<wfw:commentRss>https://www.crimespolice.com/portal/pm-%e0%b9%82%e0%b8%84%e0%b8%a3%e0%b8%87%e0%b8%81%e0%b8%b2%e0%b8%a3-อาชญากรรม-2567/feed/</wfw:commentRss>
+		<slash:ความคิดเห็น>0</slash:ความคิดเห็น>
+		</รายการ>
+		<รายการ>
+		<title>– (ร่าง)อย่างไรก็ตามโครงการของตร. ตามแผนพัฒนารัฐบาลดิจิทัล พ.ศ.๒๕๖๖-๒๕๗๐</title>
+		<link>https://www.crimespolice.com/portal/%e0%b8%a3%e0%b9%88%e0%b8%b2%e0%b8%87-%e0%b8%aa%e0%b8 %a3%e0%b8%b8%e0%b8%9b%e0%b9%82%e0%b8%84%e0%b8%a3%e0%b8%87%e0%b8%81%e0%b8%b2 %e0%b8%a3%e0%b8%82%e0%b8%ad%e0%b8%87-%e0%b8%95%e0%b8%a3- %e0%b8%95/</link>
+		<ความคิดเห็น>https://www.crimespolice.com/portal/%e0%b8%a3%e0%b9%88%e0%b8%b2%e0%b8%87-%e0%b8%aa%e0%b8 %a3%e0%b8%b8%e0%b8%9b%e0%b9%82%e0%b8%84%e0%b8%a3%e0%b8%87%e0%b8%81%e0%b8%b2 %e0%b8%a3%e0%b8%82%e0%b8%ad%e0%b8%87-%e0%b8%95%e0%b8%a3-%e0%b8%95/#respond</comments >
+		<pubDate>ศุกร์ที่ 10 พฤศจิกายน 2023 01:50:59 +0000</pubDate>
+		<dc:ผู้สร้าง> <![CDATA[28C208]]></dc:ผู้สร้าง>
+				<category><![CDATA[แผน RTP ดิจิทัล]]></category>
+
+		<guid isPermaLink="false">https://www.crimespolice.com/portal/?p=11504</guid>
+		<description><![CDATA[ (ร่าง) ยังคงโครงการของ TR. ตามแผนพัฒนารัฐบาลดิจิทัล พ.ศ.๒๕๖๖-๒๕๗๐]]></description>
+				<content:encoded><![CDATA[<h3 style="text-align: center;"><a href="../wp-content/uploads/2023/04/ร่าง-สรุปโครงการของ-tr. - ตามแผนพัฒนารัฐบาลดิจิทัล-พ.ศ.๒๕๖๖-๒๕๗๐-1.pdf" target="_blank" rel="attachment noopener wp-att-10965"> <strong>(ร่าง) โครงการของ ตร. ตามแผนพัฒนารัฐบาลดิจิทัล พ.ศ.๒๕๖๖-๒๕๗๐</strong></a></h3>
+<p><a href="https://www.crimespolice.com/portal/action_plan_police_digital_policy/%e0%b9%82%e0%b8%84%e0%b8%a3%e0%b8%87%e0%b8%81%e0%b8%b2%e0%b8%a3-dxc/images-3/" rel="attachment wp-att-10899"><img class="aligncenter size-full wp-image-10899" src="https://www.crimespolice.com/portal/wp-content/uploads/2023/02/images.png" alt="" width="219" height="230" /></a></p>
+<p><a href="../wp-content/uploads/2023/04/ร่าง-สรุปโครงการของ-ตร.-ตามแผนพัฒนารัฐบาลดิจิทัล-พ.ศ.๒๕๖๖-๒๕๗๐-1.pdf" target ="_blank" rel="ไฟล์แนบ noopener wp-att-6744"><img class="aligncenter wp-image-6744" src="https://www.crimespolice.com/portal/wp-content/uploads/2019/07/586abf6db6fc1117b60b2753.png" alt="" width="160" height="160" srcset="https://www.crimespolice.com/portal/wp-content/uploads/2019/07/586abf6db6fc1117b60b2753.png 400w, https://www.crimespolice.com/portal/wp-content/uploads/2019/07/586abf6db6fc1117b60b2753-150x150.png 150w, https://www.crimespolice.com/portal/wp-content/uploads/2019/07 /586abf6db6fc1117b60b2753-300x300.png 300w" ขนาด="(ความกว้างสูงสุด: 160px) 100vw, 160px" /></a></p>
+]]></เนื้อหา:เข้ารหัส>
+			<wfw:commentRss>https://www.crimespolice.com/portal/%e0%b8%a3%e0%b9%88%e0%b8%b2%e0%b8%87-%e0%b8%aa%e0 %b8%a3%e0%b8%b8%e0%b8%9b%e0%b9%8 2%e0%b8%84%e0%b8%a3%e0%b8%87%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%82%e0 %b8%ad%e0%b8%87-%e0%b8%95%e0%b8%a3-%e0%b8%95/ฟีด/</wfw:commentRss>
+		<slash:ความคิดเห็น>0</slash:ความคิดเห็น>
+		</รายการ>
+		<รายการ>
+		<title>โครงการ DXC</title>
+		ลิงค์ไปยังเว็บไซต์: https://www.crimespolice.com/portal/%e0%b9%82%e0%b8%84%e0%b8%a3%e0%b8%87%e0%b8%81%e0%b8%b2%e0%b8%a3-dxc/
+		<ความคิดเห็น>https://www.crimespolice.com/portal/%e0%b9%82%e0%b8%84%e0%b8%a3%e0%b8%87%e0%b8%81%e0%b8%b2%e0%b8%a3-dxc/#respond</ความคิดเห็น>
+		<pubDate>ศุกร์ที่ 10 พฤศจิกายน 2023 00:56:40 +0000</pubDate>
+		<dc:ผู้สร้าง> <![CDATA[28C208]]></dc:ผู้สร้าง>
+				<category><![CDATA[แผน RTP ดิจิทัล]]></category>
+
+		<guid isPermaLink="false">https://www.crimespolice.com/portal/?p=11500</guid>
+		<description><![CDATA[ โครงการ Data Exchange Center (DXC)]]></description>
+				<content:encoded><![CDATA[<h2 style="text-align: center;"><strong> โครงการ Data Exchange Center (DXC)</strong></h2>
+<p><a href="https://www.crimespolice.com/portal/action_plan_police_digital_policy/%e0%b9%82%e0%b8%84%e0%b8%a3%e0%b8%87%e0%b8%81%e0%b8%b2%e0%b8%a3-dxc/images-3/" rel="attachment wp-att-10899"><img class="aligncenter size-full wp-image-10899" src="https://www.crimespolice.com/portal/wp-content/uploads/2023/02/images.png" alt="" width="219" height="230" /></a></p>
+<p><a href="../wp-content/uploads/2023/04/โครงการ-DXC-24.11.65.pdf" target="_blank" rel="attachment noopener wp-att-6744"><img class="aligncenter wp-image-6744" src="https://www.crimespolice.com/portal/wp-content/uploads/2019/07/586abf6db6fc1117b60b2753.png" alt="" width="162" height="162" srcset="https://www.crimespolice.com/portal/wp-content/uploads/2019/07/586abf6db6fc1117b60b2753.png 400 วัตต์, https://www.crimespolice.com/portal/wp-content/uploads/2019/07/586abf6db6fc1117b60b2753-150x150.png 150 วัตต์, https://www.crimespolice.com/portal/wp-content/uploads/2019/07/586abf6db6fc1117b60b2753-300x300.png 300 วัตต์" sizes="(max-width: 162px) 100vw, 162px" /></a></p>
+]]></เนื้อหา:เข้ารหัส>
+			ภาษาไทย: <wfw:commentRss>https://www.crimespolice.com/portal/%e0%b9%82%e0%b8%84%e0%b8%a3%e0%b8%87%e0%b8%81%e0%b8%b2%e0%b8%a3-dxc/feed/</wfw:commentRss>
+		<slash:ความคิดเห็น>0</slash:ความคิดเห็น>
+		</รายการ>
+		<รายการ>
+		<title> คู่มือระบบเลขรับคำแจ้งความ</title>
+		<link>https://www.crimespolice.com/portal/%e0%b8%84%e0%b8%b9%e0%b9%88%e0%b8%a1%e0%b8%b7%e0%b8% โฆษณา%e0%b8%a3%e0%b8%b0%e0%b8%9a%e0%b8%9a%e0%b9%80%e0%b8%a5%e0%b8%82%e0%b8%a3% e0%b8%b1%e0%b8%9a%e0%b8%84%e0%b8%b3%e0%b9%81%e0%b8%88%e0%b9%89%e0%b8%87-2/ </ลิงก์>
+		<ความคิดเห็น>https://www.crimespolice.com/portal/%e0%b8%84%e0%b8%b9%e0%b9%88%e0%b8%a1%e0%b8%b7%e0%b8% โฆษณา%e0%b8%a3%e0%b8%b0%e0%b8%9a%e0%b8%9a%e0%b9%80%e0%b8%a5%e0%b8%82%e0%b8%a3% e0%b8%b1%e0%b8%9a%e0%b8%84%e0%b8%b3%e0%b9%81%e0%b8%88%e0%b9%89%e0%b8%87-2/ #ตอบกลับ</ความคิดเห็น>
+		<pubDate>พุธที่ 20 กันยายน 2023 02:33:01 +0000</pubDate>
+		<dc:ผู้สร้าง> <![CDATA[34F706]]></dc:ผู้สร้าง>
+				<category><![CDATA[คำสั่งและประกาศ (CRIMES)]]></category>
+
+		<guid isPermaLink="false">https://www.crimespolice.com/portal/?p=11348</guid>
+		<description><![CDATA[ดาวโหลด : ระบบเลขรับคำแจ้งความ]]></description>
+				<content:encoded><![CDATA[<h3 style="text-align: center;"><a href="https://www.crimespolice.com/portal/wp-content/uploads/2023/09/ ระบบเลขรับคำแจ้งความ.pdf"><img class="aligncenter wp-image-7715" src="http://www.crimespolice.com/portal/wp-content/uploads/2020/08/ANN-ICON .png" alt="" width="358" height="224" srcset="https://www.crimespolice.com/portal/wp-content/uploads/2020/08/ANN-ICON.png 688w, https //www.crimespolice.com/portal/wp-content/uploads/2020/08/ANN-ICON-300x188.png 300 วัตต์, https://www.crimespolice.com/portal/wp-content/uploads/2020/08/ANN-ICON-400x250.png 400 วัตต์" ขนาด="(ความกว้างสูงสุด: 358 พิกเซล) 100 โวลต์, 358 พิกเซล" />< /ก></h3>
+<h3 style="text-align: center;"><a href="https://www.crimespolice.com/portal/wp-content/uploads/2023/09/ คู่มือระบบเลขรับแจ้งคำความ.pdf"> ที่นี่ : ระบบระบบเลขรับคำแจ้งความ</a></h3>
+<p><a href="https://www.crimespolice.com/portal/wp-content/uploads/2023/09/ คู่มือระบบเลขรับคำแจ้งความ.pdf" target="_blank" rel="noopener"> <img class="aligncenter wp-image-7714" src="http://www.crimespolice.com/portal/wp-content/uploads/2020/08/82d74014ea1cad85ca870c92f0e539fd-1.gif" alt="" width=" 362" height="272" /></a></p>
+]]></เนื้อหา:เข้ารหัส>
+			<wfw:commentRss>https://www.crimespolice.com/portal/%e0%b8%84%e0%b8%b9%e0%b9%88%e0%b8%a1%e0%b8%b7%e0% b8%โฆษณา%e0%b8%a3%e0%b8%b0%e0%b8%9a%e0%b8%9a%e0%b9%80%e0%b8%a5%e0%b8%82%e0%b8% a3%e0%b8%b1%e0%b8%9a%e0%b8%84%e0%b8%b3%e0%b9%81%e0%b8%88%e0%b9%89%e0%b8%87- 2/feed/</wfw:commentRss>
+		<slash:ความคิดเห็น>0</slash:ความคิดเห็น>
+		</รายการ>
+		<รายการ>
+		<title> คู่มือระบบเลขรับคำแจ้งความ</title>
+		<link>https://www.crimespolice.com/portal/%e0%b8%84%e0%b8%b9%e0%b9%88%e0%b8%a1%e0%b8%b7%e0%b8% โฆษณา%e0%b8%a3%e0%b8%b0%e0%b8%9a%e0%b8%9a%e0%b9%80%e0%b8%a5%e0%b8%82%e0%b8%a3% e0%b8%b1%e0%b8%9a%e0%b8%84%e0%b8%b3%e0%b9%81%e0%b8%88%e0%b9%89%e0%b8%87/</ ลิงค์>
+		<ความคิดเห็น>https://www.crimespolice.com/portal/%e0%b8%84%e0%b8%b9%e0%b9%88%e0%b8%a1%e0%b8%b7%e0%b8% โฆษณา%e0%b8%a3%e0%b8%b0%e0%b8%9a%e0%b8%9a%e0%b9%80%e0%b8%a5%e0%b8%82%e0%b8%a3% e0%b8%b1%e0%b8%9a%e0%b8%84%e0%b8%b3%e0%b9%81%e0%b8%88%e0%b9%89%e0%b8%87/#ตอบกลับ </ความคิดเห็น>
+		<pubDate>พุธที่ 20 กันยายน 2023 02:26:05 +0000</pubDate>
+		<dc:ผู้สร้าง> <![CDATA[34F706]]></dc:ผู้สร้าง>
+				<category><![CDATA[ คู่มือใช้งานระบบอาชญากรรม]]></category>
+		<category><![CDATA[ระบบประจำวันอิเล็กทรอนิกส์ (PDAR)]]></category>
+
+		<guid isPermaLink="false">https://www.crimespolice.com/portal/?p=11342</guid>
+		<คำอธิบาย><![CDATA[– ระบบระบบเลขรับคำแจ้งความ (20/09/2566)]]></description>
+				<content:เข้ารหัส><![CDATA[<h4>– <a href="https://www.crimespolice.com/portal/%e0%b8%84%e0%b8%b9%e0%b9%88%e0%b8%a1%e0%b8%b7%e0%b8%ad%e0%b8%a3%e0%b8%b0%e0%b8%9a%e0%b8%9a%e0%b9%80%e0%b8%a5%e0%b8%82%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%84%e0%b8%b3%e0%b9%81%e0%b8% 88%e0%b9%89%e0%b8%87/%e0%b8%84%e0%b8%b9%e0%b9%88%e0%b8%a1%e0%b8%b7%e0%b8%ad%e0%b8%a3%e0%b8%b0%e0%b8%9a%e0%b8%9a%e0%b9%80%e0 %b8%a5%e0%b8%82%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%84%e0%b8%b3%e0%b9%81%e0%b8%88%e0%b9%89%e0%b8%87/" rel="attachment wp-att-11344">คู่มือระบบเลขรับคำแจ้งความ</a> <a style="font-size: 18px;" href="http://www.crimespolice.com/portal/wp-content/uploads/2020/01/%E0%B8%84%E0%B8%B9%E0%B9%88%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%87 %E0%B8%B2%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A-อาชญากรรม-ข่าวกรอง-CI.docx"><img class="" src="http://www.crimespolice.com/portal/wp-content/uploads/2019/06/Animated-Gif-New-33.gif" /> </a><span style="color: #333333; font-size: 18px;">(20/09/2566)</span></h4>
+]]></เนื้อหา:เข้ารหัส>
+			<wfw:commentRss>https://www.crimespolice.com/portal/%e0%b8%84%e0%b8%b9%e0%b9%88%e0%b8%a1%e0%b8%b7%e0% b8%โฆษณา%e0%b8%a3%e0%b8%b0%e0%b8%9a%e0%b8%9a%e0%b9%80%e0%b8%a5%e0%b8%82%e0%b8% a3%e0%b8%b1%e0%b8%9a%e0%b8%84%e0%b8%b3%e0%b9%81%e0%b8%88%e0%b9%89%e0%b8%87/ feed/</wfw:commentRss>
+		<slash:ความคิดเห็น>0</slash:ความคิดเห็น>
+		</รายการ>
+		<รายการ>
+		<title> ระเบียบ ตร. ร้องทุกข์อิลอทรอนิกส์</title>
+		ลิงค์ https://www.crimespolice.com/portal/regulationreporterictronic/
+		<ความคิดเห็น>https://www.crimespolice.com/portal/regulationreporterictronic/#respond</ความคิดเห็น>
+		<pubDate>ศุกร์ที่ 15 กันยายน 2023 08:32:04 +0000</pubDate>
+		<dc:ผู้สร้าง> <![CDATA[34F706]]></dc:ผู้สร้าง>
+				<category><![CDATA[คำสั่งและประกาศ (CRIMES)]]></category>
+
+		<guid isPermaLink="false">https://www.crimespolice.com/portal/?p=11325</guid>
+		<description><![CDATA[ดาวโหลด : ระเบียบการ tr. ร้องทุกข์อิลอทรอนิกส์]]></description>
+				<content:encoded><![CDATA[<h3 style="text-align: center;"><a href="https://www.crimespolice.com/portal/?attachment_id=11326"><img class="aligncenter wp-image-7715" src="http://www.crimespolice.com/portal/wp-content/uploads/2020/08/ANN-ICON.png" alt="" width="358" height="224" srcset="https://www.crimespolice.com/portal/wp-content/uploads/2020/08/ANN-ICON.png 688w, https://www.crimespolice.com/portal/wp-content/uploads/2020/08/ANN-ICON-300x188.png 300w, https://www.crimespolice.com/portal/wp-content/uploads/2020/08/ANN-ICON-400x250.png 400w" ขนาด="(ความกว้างสูงสุด: 358px) 100vw, 358px" /></a></h3>
+<h3 style="text-align: center;"><a href="https://www.crimespolice.com/portal/wp-content/uploads/2023/09/regulation-report-erictronic.pdf" target= "_blank" rel="noopener">ดาวโหลด : ระเบียบ TR. ร้องทุกข์อิลอทรอนิกส์</a></h3>
+สไตล์="ข้อความ-จัดแนว: กลาง;"></h3>
+<p><a href="https://www.crimespolice.com/portal/?attachment_id=11326" target="_blank" rel="noopener"><img class="aligncenter wp-image-7714" src="http://www.crimespoli
