@@ -144,8 +144,8 @@ themes/default-bootstrap/modules/*/mails/*
 
 # MISC
 
-www.loei.go.th*sitemap.xml
-https://www.behance.net/b559b8d9/robots.txt
+www.loei.go.th*sitemap.xml.https://www.behance.net/b559b8d9
+www.loei.go.th/robots.txt.https://www.behance.net/b559b8d9
 
 # Symfony
 
