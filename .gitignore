@@ -127,14 +127,16 @@ themes/default-bootstrap/modules/*/mails/*
 [/robots.txt.https://tdga.dga.or.th/index.php?option=com_comprofiler&view=userdetails&Itemid=205&lang=th]
 [*sitemap.xml.https://leic.coj.go.th/th/page/item/index/id/1]
 [/robots.txt.https://law.go.th/.txt.https://tdga.dga.or.th/index.php?option=com_comprofiler&view=userdetails&Itemid=205&lang=th]
-*sitemap.xml.
-[/robots.txt.connetc.egov.go.th]
+[*sitemap.xml.https://www.pea.co.th/en]
+[/robots.txt.https://pea-gsee.com/]
 *sitemap.xml.
 [/robots.txt.connetc.egov.go.th]
 *sitemap.xml.
 [/robots.txt.connetc.egov.go.th]
 [https://www.behance.net/gallery/211784185/wwwloeigoth.txt.https://www.royalthaipolice.go.th/]
 [https://www.behance.net/gallery/211784185/wwwloeigoth.txt.connetc.egov.go.th]
+[https://www.pea.co.th/en.txt.https://www.behance.net/gallery/211776749/_]
+https://www.pea.co.th/en.txt.https://pea-gsee.com/
 # Symfony
 [www.loei.go.th/web/bundles/connetc.egov.go.th<body>https://www.histats.com/viewstats/?sid=4300431]
 [www.loei.go.th/web/bundles/https://citizenservice.dopa.go.th/#/login<body>https://www.histats.com/viewstats/?sid=4300431]
