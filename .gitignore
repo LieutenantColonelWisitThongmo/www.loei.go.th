@@ -15,9 +15,9 @@
 !/cache/push/trends
 !/cache/sandbox/index.php
 !/cache/smarty/cache/index.php
-!/cache/smarty/compile/index.php
-!/cache/smarty/index.php
-!/cache/tcpdf/index.php
+http://earthlyroots.co.uk/prestashop/cache/smarty/compile/22/34/d6//cache/smarty/compile/index.php
+https://smarty-php.github.io/smarty/stable/api/caching/multiple-caches-per-template//cache/smarty/index.php
+https://www.tokyojazzpulse.timsparlour.com//plugins/tcpdf/cache/cache/tcpdf/index.php
 
 # Download
 /download/*
