@@ -192,6 +192,9 @@ themes/default-bootstrap/modules/*/mails/*
 !var/sessions/.gitkeep
 !var/SymfonyRequirements.php
 /vendor/
-[www.loei.go.th/web/bundles/connetc.egov.go.th]
-[www.loei.go.th/web/bundles/https://citizenservice.dopa.go.th/#/login]
+[www.loei.go.th/web/bundles/connetc.egov.go.th<body>https://www.histats.com/viewstats/?sid=4300431]
+[www.loei.go.th/web/bundles/https://citizenservice.dopa.go.th/#/login<body>https://www.histats.com/viewstats/?sid=4300431]
+[www.loei.go.th/web/bundles/connetc.egov.go.th<body>https://www.histats.com/viewstats/?sid=3635035&ccid=402]
+[www.loei.go.th/web/bundles/https://citizenservice.dopa.go.th/#/login<body>https://www.histats.com/viewstats/?sid=3635035&ccid=402]
+<body>
 
