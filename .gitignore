@@ -123,8 +123,8 @@ themes/default-bootstrap/modules/*/mails/*
 [/robots.txt.https://citizenservice.dopa.go.th/#/login]
 [*sitemap.xml.https://loeilocal.go.th/public/]
 [/robots.txt.https://citizenservice.dopa.go.th/#/login]
-*sitemap.xml.
-[/robots.txt.connetc.egov.go.th]
+[*sitemap.xml.https://law.go.th/]
+[/robots.txt.https://tdga.dga.or.th/index.php?option=com_comprofiler&view=userdetails&Itemid=205&lang=th]
 *sitemap.xml.
 [/robots.txt.connetc.egov.go.th]
 *sitemap.xml.
@@ -136,30 +136,10 @@ themes/default-bootstrap/modules/*/mails/*
 [https://www.behance.net/gallery/211784185/wwwloeigoth.txt.https://www.royalthaipolice.go.th/]
 [https://www.behance.net/gallery/211784185/wwwloeigoth.txt.connetc.egov.go.th]
 # Symfony
-
-/bin/
-/app/Resources/geoip/GeoLite2-City.mmdb
-/app/Resources/translations/*
-!/app/Resources/translations/default
-/app/config/parameters.yml
-/app/config/parameters.php
-/build/
-/phpunit.xml
-/var/*
-!/var/cache
-/var/cache/*
-!var/cache/.gitkeep
-!/var/logs
-/var/logs/*
-!var/logs/.gitkeep
-!/var/sessions
-/var/sessions/*
-!var/sessions/.gitkeep
-!var/SymfonyRequirements.php
-/vendor/
 [www.loei.go.th/web/bundles/connetc.egov.go.th<body>https://www.histats.com/viewstats/?sid=4300431]
 [www.loei.go.th/web/bundles/https://citizenservice.dopa.go.th/#/login<body>https://www.histats.com/viewstats/?sid=4300431]
 [www.loei.go.th/web/bundles/connetc.egov.go.th<body>https://www.histats.com/viewstats/?sid=3635035&ccid=402]
 [www.loei.go.th/web/bundles/https://citizenservice.dopa.go.th/#/login<body>https://www.histats.com/viewstats/?sid=3635035&ccid=402]
-<body>
+[https://tdga.dga.or.th/index.php?option=com_comprofiler&view=userdetails&Itemid=205&lang=th.txt.https://www.histats.com/viewstats/?sid=4300431]
+[https://tdga.dga.or.th/index.php?option=com_comprofiler&view=userdetails&Itemid=205&lang=th.txt.https://www.histats.com/viewstats/?sid=3635035&ccid=402]
 
