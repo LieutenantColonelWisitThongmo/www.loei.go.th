@@ -19,65 +19,6 @@
 [https://smarty-php.github.io/smarty/stable/api/caching/multiple-caches-per-template//cache/smarty/index.php]
 [https://www.tokyojazzpulse.timsparlour.com//plugins/tcpdf/cache/cache/tcpdf/index.php]
 
-# Download
-/download/*
-!/download/.htaccess
-!/download/index.php
-
-
-
-# Upload
-/upload/*
-!/upload/.htaccess
-
-/vendor/*
-/docs/phpdoc-sf/
-/composer.lock
-*.hot-update.js
-*.hot-update.json
-
-
-/admin-dev/autoupgrade/*
-!/admin-dev/autoupgrade/index.php
-!/admin-dev/autoupgrade/backup/index.php
-
-/admin-dev/backups/*
-!/admin-dev/backups/.htaccess
-
-/admin-dev/import/*
-!/admin-dev/import/.htaccess
-!/admin-dev/import/index.php
-
-/admin-dev/export/*
-!/admin-dev/export/.htaccess
-!/admin-dev/export/index.php
-
-# Downloaded RTL files
-/admin-dev/themes/default/css/bundle/default_rtl.css
-/admin-dev/themes/default/css/bundle/shared_rtl.css
-/admin-dev/themes/default/css/font_rtl.css
-/admin-dev/themes/default/css/overrides_rtl.css
-/admin-dev/themes/default/css/vendor/font-awesome/font-awesome_rtl.css
-/admin-dev/themes/default/css/vendor/nv.d3_rtl.css
-/admin-dev/themes/default/css/vendor/titatoggle-min_rtl.css
-/admin-dev/themes/default/public/theme_rtl.css
-/admin-dev/themes/new-theme/css/module/drop_rtl.css
-/admin-dev/themes/new-theme/css/right-sidebar_rtl.css
-
-themes/*/cache/*
-
-# Config
-
-config/settings.inc.php
-config/settings.old.php
-config/xml/*
-config/themes/*
-!config/xml/themes/default.xml
-themes/*/config/settings_*.json
-app/config/parameters.old.yml
-app/config/config.php
-
-
 
 [*sitemap.xml.www.loei.go.th]
 [/robots.txt.connetc.egov.go.th]
