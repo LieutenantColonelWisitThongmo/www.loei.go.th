@@ -272,3 +272,406 @@ This XML file does not appear to have any style information associated with it. 
 </item>
 </channel>
 </rss>]
+Swift_TransportException
+Expected response code 250 but got code "535", with message "535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8 https://support.google.com/mail/?p=BadCredentials d9443c01a7336-211056ee47bsm77602755ad.17 - gsmtp
+"
+1. in C:\inetpub\wwwroot\krisdika_new\_protected\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php at line 383
+374
+375
+376
+377
+378
+379
+380
+381
+382
+383
+384
+385
+386
+387
+388
+389
+390
+391
+392
+        $valid = (empty($wanted) || in_array($code, $wanted));
+ 
+        if ($evt = $this->_eventDispatcher->createResponseEvent($this, $response,
+            $valid)) {
+            $this->_eventDispatcher->dispatchEvent($evt, 'responseReceived');
+        }
+ 
+        if (!$valid) {
+            $this->_throwException(
+                new Swift_TransportException(
+                    'Expected response code '.implode('/', $wanted).' but got code '.
+                    '"'.$code.'", with message "'.$response.'"',
+                    $code)
+                );
+        }
+    }
+ 
+    /** Get an entire multi-line response using its sequence number */
+    protected function _getFullResponse($seq)
+2. in C:\inetpub\wwwroot\krisdika_new\_protected\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php at line 281 – Swift_Transport_AbstractSmtpTransport::_assertResponseCode('535-5.7.8 Username and Password ...', [250])
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+        $failures = (array) $failures;
+        $seq = $this->_buffer->write($command);
+        $response = $this->_getFullResponse($seq);
+        if ($evt = $this->_eventDispatcher->createCommandEvent($this, $command, $codes)) {
+            $this->_eventDispatcher->dispatchEvent($evt, 'commandSent');
+        }
+        $this->_assertResponseCode($response, $codes);
+ 
+        return $response;
+    }
+ 
+    /** Read the opening SMTP greeting */
+    protected function _readGreeting()
+3. in C:\inetpub\wwwroot\krisdika_new\_protected\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\EsmtpTransport.php at line 270 – Swift_Transport_AbstractSmtpTransport::executeCommand('RSET ', [250], [])
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+                );
+            if ($stopSignal) {
+                return $response;
+            }
+        }
+ 
+        return parent::executeCommand($command, $codes, $failures);
+    }
+ 
+    // -- Mixin invocation code
+ 
+    /** Mixin handling method for ESMTP handlers */
+    public function __call($method, $args)
+4. in C:\inetpub\wwwroot\krisdika_new\_protected\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\Esmtp\Auth\XOAuth2Authenticator.php at line 55 – Swift_Transport_EsmtpTransport::executeCommand('RSET ', [250])
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+        try {
+            $param = $this->constructXOAuth2Params($email, $token);
+            $agent->executeCommand('AUTH XOAUTH2 '.$param."\r\n", array(235));
+ 
+            return true;
+        } catch (Swift_TransportException $e) {
+            $agent->executeCommand("RSET\r\n", array(250));
+ 
+            return false;
+        }
+    }
+ 
+    /**
+5. in C:\inetpub\wwwroot\krisdika_new\_protected\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\Esmtp\AuthHandler.php at line 176 – Swift_Transport_Esmtp_Auth_XOAuth2Authenticator::authenticate(Swift_SmtpTransport, 'lawreformkrisdika2559@gmail.com', 'ejcfqbnhevmztjce')
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+        if ($this->_username) {
+            $count = 0;
+            foreach ($this->_getAuthenticatorsForAgent() as $authenticator) {
+                if (in_array(strtolower($authenticator->getAuthKeyword()),
+                    array_map('strtolower', $this->_esmtpParams))) {
+                    ++$count;
+                    if ($authenticator->authenticate($agent, $this->_username, $this->_password)) {
+                        return;
+                    }
+                }
+            }
+            throw new Swift_TransportException(
+                'Failed to authenticate on SMTP server with username "'.
+6. in C:\inetpub\wwwroot\krisdika_new\_protected\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\EsmtpTransport.php at line 334 – Swift_Transport_Esmtp_AuthHandler::afterEhlo(Swift_SmtpTransport)
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+            }
+        }
+ 
+        $this->_capabilities = $this->_getCapabilities($response);
+        $this->_setHandlerParams();
+        foreach ($this->_getActiveHandlers() as $handler) {
+            $handler->afterEhlo($this);
+        }
+    }
+ 
+    /** Overridden to add Extension support */
+    protected function _doMailFromCommand($address)
+    {
+7. in C:\inetpub\wwwroot\krisdika_new\_protected\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php at line 118 – Swift_Transport_EsmtpTransport::_doHeloCommand()
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+            try {
+                $this->_buffer->initialize($this->_getBufferParams());
+            } catch (Swift_TransportException $e) {
+                $this->_throwException($e);
+            }
+            $this->_readGreeting();
+            $this->_doHeloCommand();
+ 
+            if ($evt) {
+                $this->_eventDispatcher->dispatchEvent($evt, 'transportStarted');
+            }
+ 
+            $this->_started = true;
+8. in C:\inetpub\wwwroot\krisdika_new\_protected\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php at line 79 – Swift_Transport_AbstractSmtpTransport::start()
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+     */
+    public function send(Swift_Mime_Message $message, &$failedRecipients = null)
+    {
+        $failedRecipients = (array) $failedRecipients;
+ 
+        if (!$this->_transport->isStarted()) {
+            $this->_transport->start();
+        }
+ 
+        $sent = 0;
+ 
+        try {
+            $sent = $this->_transport->send($message, $failedRecipients);
+9. in C:\inetpub\wwwroot\krisdika_new\_protected\vendor\yiisoft\yii2-swiftmailer\Mailer.php at line 146 – Swift_Mailer::send(Swift_Message)
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+        $address = $message->getTo();
+        if (is_array($address)) {
+            $address = implode(', ', array_keys($address));
+        }
+        Yii::info('Sending email "' . $message->getSubject() . '" to "' . $address . '"', __METHOD__);
+ 
+        return $this->getSwiftMailer()->send($message->getSwiftMessage()) > 0;
+    }
+ 
+    /**
+     * Creates Swift mailer instance.
+     * @return \Swift_Mailer mailer instance.
+     */
+10. in C:\inetpub\wwwroot\krisdika_new\_protected\vendor\yiisoft\yii2\mail\BaseMailer.php at line 260 – yii\swiftmailer\Mailer::sendMessage(yii\swiftmailer\Message)
+11. in C:\inetpub\wwwroot\krisdika_new\_protected\vendor\yiisoft\yii2\mail\BaseMessage.php at line 48 – yii\mail\BaseMailer::send(yii\swiftmailer\Message)
+12. in C:\inetpub\wwwroot\krisdika_new\_protected\frontend\controllers\MemberController.php at line 76 – yii\mail\BaseMessage::send()
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+               $send = Yii::$app->mailer->compose()
+                                ->setFrom('shinobu22@outook.com')
+                                ->setTo($member->mem_email)//$currentUser->mem_email
+                                ->setSubject('ระบบสมาชิก Kritsdika.com - ยืนยันการสมัครสมาชิก')
+                                // ->setTextBody('Plain text content')
+                                ->setHtmlBody(Html::decode($bodyConfirmregisterhtml));
+                                $send->send();
+ 
+            }
+              return $this->refresh();
+            }
+      }
+ 
+13. frontend\controllers\MemberController::actionRegister()
+14. in C:\inetpub\wwwroot\krisdika_new\_protected\vendor\yiisoft\yii2\base\InlineAction.php at line 55 – call_user_func_array([frontend\controllers\MemberController, 'actionRegister'], [])
+15. in C:\inetpub\wwwroot\krisdika_new\_protected\vendor\yiisoft\yii2\base\Controller.php at line 154 – yii\base\InlineAction::runWithParams([])
+16. in C:\inetpub\wwwroot\krisdika_new\_protected\vendor\yiisoft\yii2\base\Module.php at line 454 – yii\base\Controller::runAction('register', [])
+17. in C:\inetpub\wwwroot\krisdika_new\_protected\vendor\yiisoft\yii2\web\Application.php at line 87 – yii\base\Module::runAction('member/register', [])
+18. in C:\inetpub\wwwroot\krisdika_new\_protected\vendor\yiisoft\yii2\base\Application.php at line 375 – yii\web\Application::handleRequest(yii\web\Request)
+19. in C:\inetpub\wwwroot\krisdika_new\index.php at line 18 – yii\base\Application::run()
+12
+13
+14
+15
+16
+17
+18
+    require(__DIR__ . '/_protected/common/config/main-local.php'),
+    require(__DIR__ . '/_protected/frontend/config/main.php'),
+    require(__DIR__ . '/_protected/frontend/config/main-local.php')
+);
+ 
+$application = new yii\web\Application($config);
+$application->run();
+$_POST = [
+    '_csrf' => 'bzAtZ2Y5dUQpfGILM30QcD5pST8FVDAjJ2V4DTReIT4GdHgLMWMwJw==',
+    'RegisterMember' => [
+        'mem_username' => 'DLOEI2536',
+        'mem_password' => 'Bell2536@',
+        'password_repeat' => 'Bell2536@',
+        'member_pic' => '',
+        'tit_id' => '3',
+        'mem_firstname' => 'วิศิษฎ์',
+        'mem_lastname' => 'ทองโม้',
+        'mem_email' => 'thai.go@outlook.co.th',
+        'mem_sex' => '2',
+        'mem_age' => '21-40',
+        'mem_occupation' => 'รับราชการ',
+        'member_occupation' => '',
+        'mem_tel' => '0958044521',
+        'mem_birthday' => '1993-07-20',
+        'mem_enewsletter' => [
+            '2',
+            '3',
+            '4',
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+        ],
+    ],
+];
+
+$_FILES = [
+    'RegisterMember' => [
+        'name' => [
+            'member_pic' => '1000002535.png',
+        ],
+        'type' => [
+            'member_pic' => 'image/png',
+        ],
+        'tmp_name' => [
+            'member_pic' => 'C:\\Windows\\Temp\\php7AD.tmp',
+        ],
+        'error' => [
+            'member_pic' => 0,
+        ],
+        'size' => [
+            'member_pic' => 21290,
+        ],
+    ],
+];
+
+$_COOKIE = [
+    'userfrontend' => 'd2mripqeqs40ctnbmm9mme68b7',
+    '_csrf' => '9553b24a0a2742624843a2a0bafd16d08b0b5faaf37a534029a094677a72e88ca:2:{i:0;s:5:"_csrf";i:1;s:32:"FLOlUDe4QYdXcmEgHUUjRgTziDUlWZEc";}',
+    '_gid' => 'GA1.3.1285342841.1730809536',
+    '_ga_S7F0BQMLQM' => 'GS1.1.1730809536.1.1.1730809617.0.0.0',
+    '_ga' => 'GA1.1.1684439854.1730809536',
+    '_ga_V02XDKF8VQ' => 'GS1.1.1730809535.1.1.1730809618.0.0.0',
+];
+
+$_SESSION = [
+    '__flash' => [
+        'alert' => -1,
+    ],
+    'FacebookTitles' => 'Does not get title',
+    'infoweb/analytics/connection' => 'O:24:"Google_Service_Analytics":31:{s:7:"data_ga";O:40:"Google_Service_Analytics_DataGa_Resource":7:{s:40:"' . "\0" . 'Google_Service_Resource' . "\0" . 'stackParameters";a:10:{s:3:"alt";a:2:{s:4:"type";s:6:"string";s:8:"location";s:5:"query";}s:6:"fields";a:2:{s:4:"type";s:6:"string";s:8:"location";s:5:"query";}s:5:"trace";a:2:{s:4:"type";s:6:"string";s:8:"location";s:5:"query";}s:6:"userIp";a:2:{s:4:"type";s:6:"string";s:8:"location";s:5:"query";}s:9:"quotaUser";a:2:{s:4:"type";s:6:"string";s:8:"location";s:5:"query";}s:4:"data";a:2:{s:4:"type";s:6:"string";s:8:"location";s:4:"body";}s:8:"mimeType";a:2:{s:4:"type";s:6:"string";s:8:"location";s:6:"header";}s:10:"uploadType";a:2:{s:4:"type";s:6:"string";s:8:"location";s:5:"query";}s:11:"mediaUpload";a:2:{s:4:"type";s:7:"complex";s:8:"location";s:5:"query";}s:11:"prettyPrint";a:2:{s:4:"type";s:6:"string";s:8:"location";s:5:"query";}}s:32:"' . "\0" . 'Google_Service_Resource' . "\0" . 'rootUrl";s:27:"https://www.googleapis.com/";s:31:"' . "\0" . 'Google_Service_Resource' . "\0" . 'client";O:13:"Google_Client":9:{s:19:"' . "\0" . 'Google_Client' . "\0" . 'auth";O:18:"Google_Auth_OAuth2":4:{s:40:"' . "\0" . 'Google_Auth_OAuth2' . "\0" . 'assertionCredentials";O:32:"Google_Auth_AssertionCredentials":8:{s:18:"serviceAccountName";s:58:"krisdikaanalystics@krisdika-151804.iam.gserviceaccount.com";s:6:"scopes";s:50:"https://www.googleapis.com/auth/analytics.readonly";s:10:"privateKey";s:2476:"0�	�0�	b	*�H��
+��	S�	O0�	K0�p	*�H��
+��a�]0�Y0�U*�H��
+
+���0��0(
+*�H��
+0]65 �����aC�D[x
+�' . "\0" . '��u�����`Z�g��KN�L	^
+�����T0Z�x�H�3�����!9[��?y3�����#���=X�w���qZ(VmU�HM)k��\'���N�s�z��	��3f�Ɓ��;���a?��&��\\#��+},®��nP~^7�^ǽNwGM̠dQ3obEk' . "\0" . '��3�B5�ώx�pUMrcBM�˭dc��v>��a�G�h�Z���
+1$��fkNU$��g�)���1^�ļ3X^�i�(Qz���QY�o��4H�����\'+D�ͼ�8��,�p��@��3v#d�i��fFn�I+���/g-^�s����OҏZ�sVl�5 ��}�����f��U#�I����Cy.^���(Th�GS�R>��W���Z��U`=�M�' . "\0" . '��	�Ġ	�t؍�b��k���B���"��qc*��B��k��n9��a�)DR�n���䢃+�{�!\'�c�;o�m|�8z �����^�!6���~|�(3�=��$l&��z����
+H���$�$�J�͚�J_��C7�A�=1̬m
+�兛D��[hڴ�ZT��x�[����Gl�@�#T�!����ti����B����y�Dh@��k�4W\\+�$�޶s�hYQ�A:�OTFB�NX�<7`�v
+ �®1冸��<�#�y��Wǘ9	3辑W������
+���=V�c��\\=3�G�,������1�?��i����+�Tf�s,LwC��BG' . "\0" . '�^m�9�z�5����c�5g�Dմ�;a|�/G	\\���P�UN��?S��U}���؈n��
+���p��&t�2V�mW�Ec�$!Rg<Ӣ���-�������idE�(���b��D�`)�ɪx3s�e������DK��n��P=���������(!�#�O`e�n+����C�=��q�"fb4
+\\��j]���$�j�	��CQq�E|c���H������Y8y�:k#���L����_3�d�r���@��4��q�{�#8��SMm>��y�� ��3����
+�+�ɿ�w	e␷r.��1H0#	*�H��
+	1' . "\0" . 'p' . "\0" . 'r' . "\0" . 'i' . "\0" . 'v' . "\0" . 'a' . "\0" . 't' . "\0" . 'e' . "\0" . 'k' . "\0" . 'e' . "\0" . 'y0!	*�H��
+	1Time 14810939149990��	*�H��
+���0��' . "\0" . '0��	*�H��
+0(
+*�H��
+0Ac��T�����X.Z LA�' . "\0" . '���T���ExK_��4
+{�2�N��$\'�%9qV(�o��{X�{�2�� Bt&G�F���
+�v(�9w�r
+���x�%3���Q�Q*(� ���,��|�X6𸲯L7��R5{�w������$ɦ�x��kk�?�*|�`c`Ҷ��.�罦�s�\'\\�Z�O��Q#U�I����0U��)8�y]N������;�͵�l`?�{��^��S�Vi�I�5�_z8�(U���_��q�S���r�%�P��n%Q���9�Q�O�+��m~���NT��#onBȷ��A��4O' . "\0" . '���Q�8��r���r�O3*������J,���kv\\լ:<��>�\'/s��Sq����埠�G4�TP�9U	Y#\\���w�ELZ���dd�v�b�塖
+�O�Q�8(?��O�ZJ�����WD�?�G��W�Z8�K�̲�"���,j�bJ��Ě���r�����S�H�؂���IG:J���zf���L��8�O��' . "\0" . '�������u�&�:�%:;��8�>]w�g�O�O:f���Y�T�!~=��uW��
+_��\'�Sf��>r]�&HD�GǛu3�
+��(�uNKBa2����w?�e��p	�}3�\'ƪ YQC�\\5�L����psg۔�B�~HN�o\'����ݫھ8�ه\\�Gs�\'���j��#�����~�c�l?/]c?��X?�a#J=�E!<�4; 48�ɝV��!DKnM���+>1��ѵ@��Q�+$�����X�f��T�)�ܣ�]I��tp�*Ȗ�o,�����r>l��5�H6u��\\�nD�x����ϐ�{�Jr�;zo��J��w�R�%�!$_����;��hާc�"d��y����6�e������4�/0=0!0	+' . "\0" . 'wiR��wQ-�/	�KI��z���Z,�qL�z�H�+�' . "\0" . '";s:18:"privateKeyPassword";s:10:"notasecret";s:13:"assertionType";s:42:"http://oauth.net/grant_type/jwt/1.0/bearer";s:3:"sub";b:0;s:3:"prn";b:0;s:42:"' . "\0" . 'Google_Auth_AssertionCredentials' . "\0" . 'useCache";b:1;}s:25:"' . "\0" . 'Google_Auth_OAuth2' . "\0" . 'state";N;s:25:"' . "\0" . 'Google_Auth_OAuth2' . "\0" . 'token";a:0:{}s:26:"' . "\0" . 'Google_Auth_OAuth2' . "\0" . 'client";r:35;}s:17:"' . "\0" . 'Google_Client' . "\0" . 'io";N;s:20:"' . "\0" . 'Google_Client' . "\0" . 'cache";N;s:21:"' . "\0" . 'Google_Client' . "\0" . 'config";O:13:"Google_Config":1:{s:16:"' . "\0" . '*' . "\0" . 'configuration";a:7:{s:16:"application_name";s:11:"Project Otp";s:10:"auth_class";s:18:"Google_Auth_OAuth2";s:8:"io_class";s:14:"Google_IO_Curl";s:11:"cache_class";s:17:"Google_Cache_File";s:12:"logger_class";s:18:"Google_Logger_Null";s:9:"base_path";s:26:"https://www.googleapis.com";s:7:"classes";a:10:{s:18:"Google_IO_Abstract";a:1:{s:23:"request_timeout_seconds";i:100;}s:14:"Google_IO_Curl";a:2:{s:24:"disable_proxy_workaround";b:0;s:7:"options";N;}s:22:"Google_Logger_Abstract";a:4:{s:5:"level";s:5:"debug";s:10:"log_format";s:42:"[%datetime%] %level%: %message% %context%
+";s:11:"date_format";s:13:"d/M/Y:H:i:s O";s:14:"allow_newlines";b:1;}s:18:"Google_Logger_File";a:3:{s:4:"file";s:12:"php://stdout";s:4:"mode";i:416;s:4:"lock";b:0;}s:19:"Google_Http_Request";a:2:{s:12:"disable_gzip";b:0;s:23:"enable_gzip_for_uploads";b:0;}s:18:"Google_Auth_OAuth2";a:13:{s:9:"client_id";s:72:"984759903857-jajrhcu8pvturakt4t7i9t4d6ve3homh.apps.googleusercontent.com";s:13:"client_secret";s:0:"";s:12:"redirect_uri";s:0:"";s:13:"developer_key";s:0:"";s:2:"hd";s:0:"";s:6:"prompt";s:0:"";s:12:"openid.realm";s:0:"";s:22:"include_granted_scopes";s:0:"";s:10:"login_hint";s:0:"";s:23:"request_visible_actions";s:0:"";s:11:"access_type";s:14:"offline_access";s:15:"approval_prompt";s:4:"auto";s:26:"federated_signon_certs_url";s:42:"https://www.googleapis.com/oauth2/v1/certs";}s:18:"Google_Task_Runner";a:5:{s:13:"initial_delay";i:1;s:9:"max_delay";i:60;s:6:"factor";i:2;s:6:"jitter";d:0.5;s:7:"retries";i:0;}s:24:"Google_Service_Exception";a:1:{s:9:"retry_map";a:4:{i:500;i:-1;i:503;i:-1;s:17:"rateLimitExceeded";i:-1;s:21:"userRateLimitExceeded";i:-1;}}s:19:"Google_IO_Exception";a:1:{s:9:"retry_map";a:5:{i:6;i:-1;i:7;i:-1;i:28;i:-1;i:35;i:-1;i:52;i:-1;}}s:17:"Google_Cache_File";a:1:{s:9:"directory";s:29:"C:\\Windows\\TEMP/Google_Client";}}}}s:21:"' . "\0" . 'Google_Client' . "\0" . 'logger";N;s:29:"' . "\0" . 'Google_Client' . "\0" . 'deferExecution";b:0;s:18:"' . "\0" . '*' . "\0" . 'requestedScopes";a:0:{}s:11:"' . "\0" . '*' . "\0" . 'services";a:0:{}s:28:"' . "\0" . 'Google_Client' . "\0" . 'authenticated";b:0;}s:36:"' . "\0" . 'Google_Service_Resource' . "\0" . 'serviceName";s:9:"analytics";s:36:"' . "\0" . 'Google_Service_Resource' . "\0" . 'servicePath";s:13:"analytics/v3/";s:37:"' . "\0" . 'Google_Service_Resource' . "\0" . 'resourceName";s:2:"ga";s:32:"' . "\0" . 'Google_Service_Resource' . "\0" . 'methods";a:1:{s:3:"get";a:3:{s:4:"path";s:7:"data/ga";s:10:"httpMethod";s:3:"GET";s:10:"parameters";a:13:{s:3:"ids";a:3:{s:8:"location";s:5:"query";s:4:"type";s:6:"string";s:8:"required";b:1;}s:10:"start-date";a:3:{s:8:"location";s:5:"query";s:4:"type";s:6:"string";s:8:"required";b:1;}s:8:"end-date";a:3:{s:8:"location";s:5:"query";s:4:"type";s:6:"string";s:8:"required";b:1;}s:7:"metrics";a:3:{s:8:"location";s:5:"query";s:4:"type";s:6:"string";s:8:"required";b:1;}s:10:"dimensions";a:2:{s:8:"location";s:5:"query";s:4:"type";s:6:"string";}s:7:"filters";a:2:{s:8:"location";s:5:"query";s:4:"type";s:6:"string";}s:18:"include-empty-rows";a:2:{s:8:"location";s:5:"query";s:4:"type";s:7:"boolean";}s:11:"max-results";a:2:{s:8:"location";s:5:"query";s:4:"type";s:7:"integer";}s:6:"output";a:2:{s:8:"location";s:5:"query";s:4:"type";s:6:"string";}s:13:"samplingLevel";a:2:{s:8:"location";s:5:"query";s:4:"type";s:6:"string";}s:7:"segment";a:2:{s:8:"location";s:5:"query";s:4:"type";s:6:"string";}s:4:"sort";a:2:{s:8:"location";s:5:"query";s:4:"type";s:6:"string";}s:11:"start-index";a:2:{s:8:"location";s:5:"query";s:4:"type";s:7:"integer";}}}}}s:8:"data_mcf";O:41:"Google_Service_Analytics_DataMcf_Resource":7:{s:40:"' . "\0" . 'Google_Service_Resource' . "\0" . 'stackParameters";a:10:{s:3:"alt";a:2:{s:4:"type";s:6:"string";s:8:"location";s:5:"query";}s:6:"fields";a:2:{s:4:"type";s:6:"string";s:8:"location";s:5:"query";}s:5:"trace";a:2:{s:4:"type";s:6:"string";s:8:"location";s:5:"query";}s:6:"userIp";a:2:{s:4:"type";s:6:"string";s:8:"location";s:5:"query";}s:9:"quotaUser";a:2:{s:4:"type";s:6:"string";s:8:"location";s:5:"query";}s:4:"data";a:2:{s:4:"type";s:6:"string";s:8:"location";s:4:"body";}s:8:"mimeType";a:2:{s:4:"type";s:6:"string";s:8:"location";s:6:"header";}s:10:"uploadType";a:2:{s:4:"type";s:6:"string";s:8:"location";s:5:"query";}s:11:"mediaUpload";a:2:{s:4:"type";s:7:"complex";s:8:"location";s:5:"query";}s:11:"prettyPrint";a:2:{s:4:"type";s:6:"string";s:8:"location";s:5:"query";}}s:32:"' . "\0" . 'Google_Service_Resource' . "\0" . 'rootUrl";s:27:"https://www.googleapis.com/";s:31:"' . "\0" . 'Google_Service_Resource' . "\0" . 'client";r:35;s:36:"' . "\0" . 'Google_Service_Resource' . "\0" . 'serviceName";s:9:"analytics";s:36:"' . "\0" . 'Google_Service_Resource' . "\0" . 'servicePath";s:13:"analytics/v3/";s:37:"' . "\0" . 'Google_Serv
