@@ -17,7 +17,7 @@ https://docs.joomla.org/Cache_Basic_API_Guide/cache/sandbox/index.php
 https://smarty-php.github.io/smarty/stable/api/caching/basics//cache/smarty/cache/index.php
 http://earthlyroots.co.uk/prestashop/cache/smarty/compile/22/34/d6//cache/smarty/compile/index.php
 https://smarty-php.github.io/smarty/stable/api/caching/multiple-caches-per-template//cache/smarty/index.php
-https://www.tokyojazzpulse.timsparlour.com//plugins/tcpdf/cache/cache/tcpdf/index.php
+[https://www.tokyojazzpulse.timsparlour.com//plugins/tcpdf/cache/cache/tcpdf/index.php]
 
 # Download
 /download/*
@@ -144,20 +144,20 @@ themes/default-bootstrap/modules/*/mails/*
 
 # MISC
 
-*sitemap.xml.www.loei.go.th
-/robots.txt.https://www.behance.net/b559b8d9
-*sitemap.xml.https://www.bora.dopa.go.th/tag/p42/
+*sitemap.xml.[www.loei.go.th]
+/robots.txt.[connetc.egov.go.th]
+*sitemap.xml.[https://www.bora.dopa.go.th/tag/p42/]
 /robots.txt.[[connetc.egov.go.th]]
-*sitemap.xml.https://www.pea.co.th/en
-/robots.txt.https://www.behance.net/gallery/211776749/_
-*sitemap.xml.https://www.royalthaipolice.go.th/
-/robots.txt.connetc.egov.go.th
-*sitemap.xml.https://www.royalthaipolice.go.th/
-/robots.txt.https://www.behance.net/gallery/211784185/wwwloeigoth
+*sitemap.xml.[https://www.pea.co.th/en]
+/robots.txt.[connetc.egov.go.th]
+*sitemap.xml.[https://www.royalthaipolice.go.th/]
+/robots.txt.[connetc.egov.go.th]
 *sitemap.xml.
-/robots.txt.https://www.behance.net/b559b8d9
+/robots.txt.
 *sitemap.xml.
-/robots.txt.https://www.behance.net/b559b8d9
+/robots.txt.
+*sitemap.xml.
+/robots.txt.
 *sitemap.xml.
 # Symfony
 
